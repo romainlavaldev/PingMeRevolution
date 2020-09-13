@@ -68,7 +68,6 @@
                     </Button>
                 </StackPanel>
                 <DockPanel Name="ContentDockPanel" LastChildFill="False" HorizontalAlignment="Right" Width="680" VerticalAlignment="Bottom" Height="580" Background="Transparent">
-                    <local:Home x:Name="UserControlHome"/>
                 </DockPanel>
             </StackPanel>
         </Grid>

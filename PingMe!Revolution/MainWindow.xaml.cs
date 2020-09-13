@@ -32,11 +32,12 @@ namespace PingMe_Revolution
                 InitFiles();
             }
             BtnHome_Click(BtnHome, null);
-
-
+            Home home = new Home();
+            ContentDockPanel.Children.Add(home);
+            BtnHome_Click(BtnHome, null);
         }
 
-        
+
 
         private void TitleBar_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -56,7 +57,7 @@ namespace PingMe_Revolution
         private void InitFiles()
         {
             Directory.CreateDirectory(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\PingMeData");
-            File.Create(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\PingMeData\\data.txt");
+            File.WriteAllText(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\PingMeData\\data.txt", "Google,www.google.com");
         }
 
         private void BtnDonate_Click(object sender, RoutedEventArgs e)
