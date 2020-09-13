@@ -1,0 +1,92 @@
+﻿<UserControl x:Class="PingMe_Revolution.Home"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PingMe_Revolution" xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="580" d:DesignWidth="680">
+    <UserControl.Resources>
+        <Style TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button" >
+                        <Grid >
+                            <StackPanel Name="border" Orientation="Horizontal" Background="{TemplateBinding Background}">
+                                <Grid Width="{TemplateBinding Width}" VerticalAlignment="Stretch" Background="{TemplateBinding Foreground}"/>
+                            </StackPanel>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#2e3236"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="lvc:LineSeries">
+            <Setter Property="StrokeThickness" Value="3"></Setter>
+            <Setter Property="Stroke" Value="#007dec"></Setter>
+            <Setter Property="Fill" Value="#190BA2FF"></Setter>
+            <Setter Property="PointGeometrySize" Value="0"></Setter>
+            <Setter Property="LineSmoothness" Value="5"></Setter>
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <!--<Label Content="Ping to" HorizontalAlignment="Left" Margin="50,30,0,0" VerticalAlignment="Top" FontSize="30"/>-->
+            <Image Source="/images/pingto.png" Width="120" HorizontalAlignment="Left" Margin="55,60,0,0"/>
+            <StackPanel Orientation="Horizontal" Height="50" Margin="0,-4,0,0">
+                <ComboBox x:Name="CbNames" Height="40" Width="250" HorizontalAlignment="Left" Margin="55,0,0,0" Background="#FF2E3236" Foreground="#FF41454B" Style="{StaticResource {x:Static ToolBar.ComboBoxStyleKey}}" SelectedIndex="0" FontSize="19"/>
+                <ComboBox x:Name="CbIPs" Visibility="Hidden" Height="0" Width="0"/>
+                <Button Height="40" Width="40" Margin="20,0,0,0" Padding="0,0,0,0" Background="#373b40">
+                    <Button.Foreground>
+                        <ImageBrush ImageSource="images/PlusIco.png"/>
+                    </Button.Foreground>
+                </Button>
+                <Button Name="BtnModify" Height="40" Width="40" Margin="5,0,0,0" Padding="0,0,0,0" Background="#373b40" Click="BtnModify_Click">
+                    <Button.Foreground>
+                        <ImageBrush ImageSource="images/modif.png"/>
+                    </Button.Foreground>
+                </Button>
+                <Button Name="BtnImport" Height="50" Width="50" Margin="113,0,0,0" Background="#373b40" Click="BtnImport_Click">
+                    <Button.Foreground>
+                        <ImageBrush ImageSource="images/import.png"/>
+                    </Button.Foreground>
+                </Button>
+                <Rectangle  Width="1" Fill="AntiqueWhite"/>
+                <Button Name="BtnExport" Height="50" Width="50" Margin="0,0,0,0" Background="#373b40" Click="BtnExport_Click">
+                    <Button.Foreground>
+                        <ImageBrush ImageSource="images/export.png"/>
+                    </Button.Foreground>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,-30,0,0">
+                <TextBox Name="TbPing" IsReadOnly="True" Height="40" Width="120" HorizontalAlignment="Left" Margin="55,80,0,0" Background="#2e3236" BorderThickness="0" TextAlignment="Right" VerticalContentAlignment="Center" FontSize="25" Padding="0,0,10,0"/>
+                <Label Width="55" Height="40" Background="#373b40" VerticalAlignment="Bottom" FontSize="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" FontFamily="Bahnschrift Condensed">
+                    <Image Source="images/ms.png"/>
+                </Label>
+                <Button  Name="BtnStartStop" Height="40" VerticalAlignment="Bottom" Width="40" Background="#373b40" Margin="20,0,0,0" Click="BtnStartStop_Click">
+                    <Button.Foreground>
+                        <ImageBrush x:Name="StartStopIco" ImageSource="images/stopped.png"/>
+                    </Button.Foreground>
+                </Button>
+            </StackPanel>
+
+            <lvc:CartesianChart Hoverable="False" Name="PingChart" LegendLocation="None" Height="250" Width="570" HorizontalAlignment="Left" Margin="55,25,0,0" Background="#373b40">
+                <lvc:CartesianChart.AxisX >
+                    <lvc:Axis MinValue="0" Labels=""/>
+                </lvc:CartesianChart.AxisX>
+                <lvc:CartesianChart.AxisY>
+                    <lvc:Axis Name="PingChartYAxis" Foreground="White" MinValue="0" MaxValue="400"/>
+                </lvc:CartesianChart.AxisY>
+                
+            </lvc:CartesianChart>
+            <!--<StackPanel Name="GraphContainer" Orientation="Horizontal" Height="250" Width="530" HorizontalAlignment="Left" Margin="55,25,0,0" Background="DarkGoldenrod"/>-->
+            <!--<Rectangle Height="250" Width="530" HorizontalAlignment="Left" Margin="55,25,0,0" Fill="#2e3236"/>-->
+        </StackPanel>
+    </Grid>
+</UserControl>

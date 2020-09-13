@@ -1,0 +1,16 @@
+﻿<Window x:Class="PingMe_Revolution.ModifyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PingMe_Revolution"
+        mc:Ignorable="d"
+        Title="ModifyWindow" Height="400" Width="300">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="0,50,0,0">
+            <TextBox Name="TBName" Background="Red"/>
+            <TextBox Name="TBIp" Background="Blue"/>
+            <Button Name="BtnOK" Height="100" Background="Green" Content="OK" FontSize="40" Click="BtnOK_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

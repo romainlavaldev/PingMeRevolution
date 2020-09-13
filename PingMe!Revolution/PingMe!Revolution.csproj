@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>PingMe_Revolution</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\-.png" />
+    <None Remove="images\export.png" />
+    <None Remove="images\fond.png" />
+    <None Remove="images\import.png" />
+    <None Remove="images\modif.png" />
+    <None Remove="images\ms.png" />
+    <None Remove="images\pingme.png" />
+    <None Remove="images\pingto.png" />
+    <None Remove="images\PlusIco.png" />
+    <None Remove="images\started.png" />
+    <None Remove="images\stopped.png" />
+    <None Remove="images\utema.png" />
+    <None Remove="images\x.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\-.png" />
+    <Resource Include="images\export.png" />
+    <Resource Include="images\fond.png" />
+    <Resource Include="images\import.png" />
+    <Resource Include="images\modif.png" />
+    <Resource Include="images\ms.png" />
+    <Resource Include="images\pingme.png" />
+    <Resource Include="images\pingto.png" />
+    <Resource Include="images\PlusIco.png" />
+    <Resource Include="images\started.png" />
+    <Resource Include="images\stopped.png" />
+    <Resource Include="images\utema.png" />
+    <Resource Include="images\x.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiveCharts" Version="0.9.7" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+  </ItemGroup>
+
+</Project>

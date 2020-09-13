@@ -1,0 +1,76 @@
+﻿<Window x:Class="PingMe_Revolution.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PingMe_Revolution"
+        mc:Ignorable="d"
+        Title="MainWindow" Background="Transparent" Height="610" Width="910" WindowStyle="None" ResizeMode="CanMinimize" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="TransparentStyle" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border  Background="{TemplateBinding Background}">
+                            <ContentPresenter/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Border CornerRadius="7" BorderThickness="5" BorderBrush="#373b40" >
+        <Grid Width="900" Height="600">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Width="220" VerticalAlignment="Bottom" Height="500" Background="#373b40">
+                <Button  Style="{StaticResource TransparentStyle}" Name="BtnHome" Height="60" FontSize="30" HorizontalContentAlignment="Left" Background="Transparent" Padding="0" BorderBrush="{x:Null}"  Click="BtnHome_Click" >
+                    <DockPanel Width="220" Height="60" HorizontalAlignment="Left">
+                        <Rectangle Name="RectBtnHome" Width="4" Fill="#007dec" Visibility="Hidden"/>
+                        <Label Padding="0,10,0,0" Foreground="White" Margin="40,0,0,0" Content="Home"/>
+                    </DockPanel>
+                </Button>
+                <Button Style="{StaticResource TransparentStyle}" Name="BtnAddresses" Height="60" FontSize="30" HorizontalContentAlignment="Left" Padding="0" Background="Transparent" BorderBrush="{x:Null}" Click="BtnAddresses_Click">
+                    <DockPanel Width="220" Height="60" HorizontalAlignment="Left">
+                        <Rectangle Name="RectBtnAddresses" Width="4" Fill="#007dec" Visibility="Hidden"/>
+                        <Label Padding="0,10,0,0" Foreground="White" Margin="40,0,0,0" Content="Addresses"/>
+                    </DockPanel>
+                </Button>
+                <Button Style="{StaticResource TransparentStyle}" Name="BtnHelp" Height="60" FontSize="30" HorizontalContentAlignment="Left" Padding="0" Background="Transparent" BorderBrush="{x:Null}" Click="BtnHelp_Click">
+                    <DockPanel Width="220" Height="60" HorizontalAlignment="Left">
+                        <Rectangle Name="RectBtnHelp" Width="4" Fill="#007dec" Visibility="Hidden"/>
+                        <Label Padding="0,10,0,0" Foreground="White" Margin="40,0,0,0" Content="Help"/>
+                    </DockPanel>
+                </Button>
+                <Button Style="{StaticResource TransparentStyle}" Name="BtnDonate" Height="60" FontSize="30" HorizontalContentAlignment="Left" Padding="0" Background="Transparent" BorderBrush="{x:Null}" Click="BtnDonate_Click">
+                    <DockPanel Width="220" Height="60" HorizontalAlignment="Left">
+                        <Rectangle Name="RectBtnDonate" Width="4" Fill="#007dec" Visibility="Hidden"/>
+                        <Label Padding="0,10,0,0" Margin="40,0,0,0" Content="Donate"  Foreground="#007dec" />
+                    </DockPanel>
+                </Button>
+                <Image Source="images/utema.png" Width="130" Margin="0,50,0,0"/>
+            </StackPanel>
+            <DockPanel LastChildFill="False" HorizontalAlignment="Left" Width="220" VerticalAlignment="Top" Height="100" Background="#373b40">
+                <Image Source="images/pingme.png" Width="150" Margin="35,0,0,0"/>
+            </DockPanel>
+            <StackPanel Width="680" HorizontalAlignment="Right">
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="images/fond.png"/>
+                </StackPanel.Background>
+                <StackPanel Orientation="Horizontal" FlowDirection="RightToLeft" Name="TitleBar" HorizontalAlignment="Right" Width="680" VerticalAlignment="Top" Height="20" Background="Transparent" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown" >
+                    <Button x:Name="BtnClose" Width="20" Height="20" HorizontalAlignment="Right" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" BorderThickness="0" Click="BtnClose_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="images/x.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnMinimize" Width="20" Height="20" HorizontalAlignment="Right" Margin="5,0,0,0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" BorderThickness="0" Click="BtnMinimize_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="images/-.png"/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+                <DockPanel Name="ContentDockPanel" LastChildFill="False" HorizontalAlignment="Right" Width="680" VerticalAlignment="Bottom" Height="580" Background="Transparent">
+                    <local:Home x:Name="UserControlHome"/>
+                </DockPanel>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
