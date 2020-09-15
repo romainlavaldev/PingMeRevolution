@@ -18,20 +18,57 @@ namespace PingMe_Revolution
     public partial class ModifyWindow : Window
     {
         Home homeRef;
-        int indexItem;
-        public ModifyWindow(string name, string ip, Home home, int index)
+        private string[] nameList;
+        private string[] ipList;
+        public ModifyWindow(string[] names, string[] ips, Home home)
         {
-            indexItem = index;
+            nameList = names;
+            ipList = ips;
+            populateListView(LVNames, names);
+            
             homeRef = home;
             InitializeComponent();
-            TBName.Text = name;
-            TBIp.Text = ip;
+        }
+
+        void populateListView(ListView lv, string[] names)
+        {
+            lv.Items.Clear();
+            foreach (string name in names)
+            {
+                lv.Items.Add(name);
+            }
         }
 
         private void BtnOK_Click(object sender, RoutedEventArgs e)
         {
-            homeRef.ModifyData(TBName.Text, TBIp.Text, indexItem);
+            /*homeRef.ModifyData(TBName.Text, TBIp.Text, indexItem);
+            this.Close();*/
+        }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
             this.Close();
+        }
+
+        private void LVNames_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DependencyObject dep = (DependencyObject)e.OriginalSource;
+            while ((dep != null) && !(dep is ListViewItem))
+            {
+                dep = VisualTreeHelper.GetParent(dep);
+            }
+
+            if (dep == null)
+                return;
+            String selectedName = (String)LVNames.ItemContainerGenerator.ItemFromContainer(dep);
+            TBName.Text = selectedName;
+            int selectedIndex = Array.IndexOf(nameList, selectedName);
+            TBIp.Text = ipList[selectedIndex];
         }
     }
 }

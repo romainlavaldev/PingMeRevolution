@@ -34,7 +34,6 @@ D:\GitHub\PingMeRevolution\PingMe!Revolution\bin\Debug\netcoreapp3.1\PingMe!Revo
 D:\GitHub\PingMeRevolution\PingMe!Revolution\bin\Debug\netcoreapp3.1\PingMe!Revolution.pdb
 D:\GitHub\PingMeRevolution\PingMe!Revolution\bin\Debug\netcoreapp3.1\LiveCharts.dll
 D:\GitHub\PingMeRevolution\PingMe!Revolution\bin\Debug\netcoreapp3.1\LiveCharts.Wpf.dll
-D:\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution.csprojAssemblyReference.cache
 D:\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\Home.g.cs
 D:\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 D:\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\ModifyWindow.g.cs
@@ -53,3 +52,4 @@ D:\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revo
 D:\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution.dll
 D:\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution.pdb
 D:\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution.genruntimeconfig.cache
+D:\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution.csprojAssemblyReference.cache

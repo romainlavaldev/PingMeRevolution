@@ -5,12 +5,64 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PingMe_Revolution"
         mc:Ignorable="d"
-        Title="ModifyWindow" Height="400" Width="300">
+        Title="ModifyWindow" Height="415" Width="300" WindowStyle="None" WindowStartupLocation="CenterScreen" Background="#373b40" ResizeMode="NoResize" Topmost="True">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button" >
+                        <Grid >
+                            <StackPanel Name="border" Orientation="Horizontal" Background="{TemplateBinding Background}">
+                                <Grid Width="{TemplateBinding Width}" VerticalAlignment="Stretch" Background="{TemplateBinding Foreground}"/>
+                            </StackPanel>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#2e3236"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
-        <StackPanel Orientation="Vertical" Margin="0,50,0,0">
-            <TextBox Name="TBName" Background="Red"/>
-            <TextBox Name="TBIp" Background="Blue"/>
-            <Button Name="BtnOK" Height="100" Background="Green" Content="OK" FontSize="40" Click="BtnOK_Click"/>
+        
+        <StackPanel Orientation="Vertical" Margin="0,15,0,0" Width="250">
+            <Image HorizontalAlignment="Left" Margin="0,0,0,15" Source="images/edit.png" Width="50"/>
+            <ListView Name="LVNames" Background="#2e3236" Height="150" Width="250" HorizontalAlignment="Center" SelectionChanged="ListView_SelectionChanged" MouseLeftButtonDown="LVNames_OnMouseLeftButtonDown"/>
+            <Rectangle Width="200" Height="3" Fill="#41454b" Margin="0,10,0,10"/>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Margin="12,0,0,0" Orientation="Vertical" Width="160">
+                    <Label Foreground="White" Content="Name" Padding="0" FontSize="15"/>
+                    <TextBox MaxLines="1" Height="30" BorderThickness="0" Background="#2e3236" Name="TBName" Text="Google" FontSize="18" />
+
+                    <Label Foreground="White" Content="IP Address" Padding="0" FontSize="15" Margin="0,10,0,0"/>
+                    <TextBox MaxLines="1" Height="30" BorderThickness="0" Background="#2e3236" Name="TBIp" Text="Google" FontSize="18"/>
+                </StackPanel>
+                <Button Margin="15,0,0,0" Width="45" Height="45" Background="#41454b">
+                    <Button.Foreground >
+                        <ImageBrush ImageSource="images/bin.png"/>
+                    </Button.Foreground>
+                </Button>
+            </StackPanel>
+            <Rectangle Width="200" Height="3" Fill="#41454b" Margin="0,20,0,12"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+                <Button Content="Cancel" HorizontalAlignment="Left" Width="80" Margin="0,0,5,0" Height="35" FontSize="16" Background="#41454b" Click="Button_Click">
+                    <Button.Foreground >
+                        <ImageBrush ImageSource="images/cancel.png"/>
+                    </Button.Foreground>
+                </Button>
+                <Button Name="BtnOK" HorizontalAlignment="Right" Background="#41454b" Width="80" Margin="5,0,0,0" Height="35" FontSize="18" FontWeight="Bold" Click="BtnOK_Click">
+                    <Button.Foreground >
+                        <ImageBrush ImageSource="images/save.png"/>
+                    </Button.Foreground>
+                </Button>
+            </StackPanel>
+            
+
+            <!--<Button Name="BtnOK" Height="100" Background="Green" Content="OK" FontSize="40" Click="BtnOK_Click"/>-->
         </StackPanel>
     </Grid>
 </Window>

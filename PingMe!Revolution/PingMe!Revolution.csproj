@@ -9,6 +9,9 @@
 
   <ItemGroup>
     <None Remove="images\-.png" />
+    <None Remove="images\bin.png" />
+    <None Remove="images\cancel.png" />
+    <None Remove="images\edit.png" />
     <None Remove="images\export.png" />
     <None Remove="images\fond.png" />
     <None Remove="images\import.png" />
@@ -17,6 +20,7 @@
     <None Remove="images\pingme.png" />
     <None Remove="images\pingto.png" />
     <None Remove="images\PlusIco.png" />
+    <None Remove="images\save.png" />
     <None Remove="images\started.png" />
     <None Remove="images\stopped.png" />
     <None Remove="images\utema.png" />
@@ -25,6 +29,9 @@
 
   <ItemGroup>
     <Resource Include="images\-.png" />
+    <Resource Include="images\bin.png" />
+    <Resource Include="images\cancel.png" />
+    <Resource Include="images\edit.png" />
     <Resource Include="images\export.png" />
     <Resource Include="images\fond.png" />
     <Resource Include="images\import.png" />
@@ -33,6 +40,7 @@
     <Resource Include="images\pingme.png" />
     <Resource Include="images\pingto.png" />
     <Resource Include="images\PlusIco.png" />
+    <Resource Include="images\save.png" />
     <Resource Include="images\started.png" />
     <Resource Include="images\stopped.png" />
     <Resource Include="images\utema.png" />

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
+using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Timers;
@@ -220,10 +221,23 @@ namespace PingMe_Revolution
             File.WriteAllText(path, datas);
         }
 
+        string[] namelist;
+        string[] ipList;
         private void BtnModify_Click(object sender, RoutedEventArgs e)
         {
-            ModifyWindow modifyWindow = new ModifyWindow(CbNames.SelectedItem.ToString(), CbIPs.Items[CbNames.SelectedIndex].ToString(),
-                this, CbNames.SelectedIndex);
+ 
+            foreach (ListItem item in CbNames.Items)
+            {
+                namelist.Append(item.ToString());
+            }
+
+            foreach (ListItem item in CbIPs.Items)
+            {
+                ipList.Append(item.ToString());
+            }
+            
+            ModifyWindow modifyWindow = new ModifyWindow(namelist, ipList,
+                this);
             modifyWindow.Show();
         }
 
