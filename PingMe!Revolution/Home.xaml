@@ -40,7 +40,7 @@
             <!--<Label Content="Ping to" HorizontalAlignment="Left" Margin="50,30,0,0" VerticalAlignment="Top" FontSize="30"/>-->
             <Image Source="/images/pingto.png" Width="120" HorizontalAlignment="Left" Margin="55,60,0,0"/>
             <StackPanel Orientation="Horizontal" Height="50" Margin="0,-4,0,0">
-                <ComboBox x:Name="CbNames" Height="40" Width="250" HorizontalAlignment="Left" Margin="55,0,0,0" Background="#FF2E3236" Foreground="#FF41454B" Style="{StaticResource {x:Static ToolBar.ComboBoxStyleKey}}" SelectedIndex="0" FontSize="19"/>
+                <ComboBox x:Name="CbNames" Height="40" Width="250" HorizontalAlignment="Left" Margin="55,0,0,0" Background="#FF2E3236" Foreground="White" Style="{StaticResource {x:Static ToolBar.ComboBoxStyleKey}}" SelectedIndex="0" FontSize="19"/>
                 <ComboBox x:Name="CbIPs" Visibility="Hidden" Height="0" Width="0"/>
                 <Button Height="40" Width="40" Margin="20,0,0,0" Padding="0,0,0,0" Background="#373b40">
                     <Button.Foreground>
@@ -65,7 +65,7 @@
                 </Button>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="0,-30,0,0">
-                <TextBox Name="TbPing" IsReadOnly="True" Height="40" Width="120" HorizontalAlignment="Left" Margin="55,80,0,0" Background="#2e3236" BorderThickness="0" TextAlignment="Right" VerticalContentAlignment="Center" FontSize="25" Padding="0,0,10,0"/>
+                <TextBox Name="TbPing" Foreground="White" IsReadOnly="True" Height="40" Width="120" HorizontalAlignment="Left" Margin="55,80,0,0" Background="#2e3236" BorderThickness="0" TextAlignment="Right" VerticalContentAlignment="Center" FontSize="25" Padding="0,0,10,0"/>
                 <Label Width="55" Height="40" Background="#373b40" VerticalAlignment="Bottom" FontSize="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" FontFamily="Bahnschrift Condensed">
                     <Image Source="images/ms.png"/>
                 </Label>

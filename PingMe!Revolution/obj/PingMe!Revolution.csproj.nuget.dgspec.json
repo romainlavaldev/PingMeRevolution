@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\PingMeRevolution\\PingMe!Revolution\\PingMe!Revolution.csproj": {}
+    "D:\\Ce PC\\Documents\\GitHub\\PingMeRevolution\\PingMe!Revolution\\PingMe!Revolution.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\PingMeRevolution\\PingMe!Revolution\\PingMe!Revolution.csproj": {
+    "D:\\Ce PC\\Documents\\GitHub\\PingMeRevolution\\PingMe!Revolution\\PingMe!Revolution.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\PingMeRevolution\\PingMe!Revolution\\PingMe!Revolution.csproj",
+        "projectUniqueName": "D:\\Ce PC\\Documents\\GitHub\\PingMeRevolution\\PingMe!Revolution\\PingMe!Revolution.csproj",
         "projectName": "PingMe!Revolution",
-        "projectPath": "D:\\GitHub\\PingMeRevolution\\PingMe!Revolution\\PingMe!Revolution.csproj",
+        "projectPath": "D:\\Ce PC\\Documents\\GitHub\\PingMeRevolution\\PingMe!Revolution\\PingMe!Revolution.csproj",
         "packagesPath": "C:\\Users\\romai\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\PingMeRevolution\\PingMe!Revolution\\obj\\",
+        "outputPath": "D:\\Ce PC\\Documents\\GitHub\\PingMeRevolution\\PingMe!Revolution\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\romai\\AppData\\Roaming\\NuGet\\NuGet.Config",

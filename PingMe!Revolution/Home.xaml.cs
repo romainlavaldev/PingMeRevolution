@@ -221,19 +221,17 @@ namespace PingMe_Revolution
             File.WriteAllText(path, datas);
         }
 
-        string[] namelist;
-        string[] ipList;
         private void BtnModify_Click(object sender, RoutedEventArgs e)
         {
- 
-            foreach (ListItem item in CbNames.Items)
-            {
-                namelist.Append(item.ToString());
-            }
+            
+            List<string> namelist = new List<string>(); 
+            List<string> ipList = new List<string>();
+            string[] datas = File.ReadAllLines(dataPath);
 
-            foreach (ListItem item in CbIPs.Items)
+            foreach (string data in datas)
             {
-                ipList.Append(item.ToString());
+                namelist.Add(data.Split(",", 2)[0]);
+                ipList.Add(data.Split(",", 2)[1]);
             }
             
             ModifyWindow modifyWindow = new ModifyWindow(namelist, ipList,

@@ -18,21 +18,22 @@ namespace PingMe_Revolution
     public partial class ModifyWindow : Window
     {
         Home homeRef;
-        private string[] nameList;
-        private string[] ipList;
-        public ModifyWindow(string[] names, string[] ips, Home home)
+        private List<string> nameList;
+        private List<string> ipList;
+        private int selectedIndex = -1;
+        public ModifyWindow(List<string> names, List<string> ips, Home home)
         {
             nameList = names;
             ipList = ips;
+            
+            InitializeComponent();
             populateListView(LVNames, names);
             
             homeRef = home;
-            InitializeComponent();
         }
 
-        void populateListView(ListView lv, string[] names)
+        void populateListView(ListView lv, List<string> names)
         {
-            lv.Items.Clear();
             foreach (string name in names)
             {
                 lv.Items.Add(name);
@@ -41,13 +42,35 @@ namespace PingMe_Revolution
 
         private void BtnOK_Click(object sender, RoutedEventArgs e)
         {
-            /*homeRef.ModifyData(TBName.Text, TBIp.Text, indexItem);
-            this.Close();*/
+            if (LVNames.SelectedIndex == -1)
+            {
+                this.Close();
+            }
+            else
+            {
+                homeRef.ModifyData(TBName.Text, TBIp.Text, LVNames.SelectedIndex);
+                this.Close();   
+            }
         }
+
+        
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            if (selectedIndex != -1)
+            {
+                nameList[selectedIndex] = TBName.Text;
+                ipList[selectedIndex] = TBIp.Text;
+                LVNames.Items.Clear();
+                foreach (string name in nameList)
+                {
+                    LVNames.Items.Add(name);
+                }
+            }
+            
+            selectedIndex = LVNames.SelectedIndex;
+            TBName.Text = nameList[selectedIndex];
+            TBIp.Text = ipList[selectedIndex];
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -55,7 +78,7 @@ namespace PingMe_Revolution
             this.Close();
         }
 
-        private void LVNames_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        /*private void LVNames_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DependencyObject dep = (DependencyObject)e.OriginalSource;
             while ((dep != null) && !(dep is ListViewItem))
@@ -67,8 +90,10 @@ namespace PingMe_Revolution
                 return;
             String selectedName = (String)LVNames.ItemContainerGenerator.ItemFromContainer(dep);
             TBName.Text = selectedName;
-            int selectedIndex = Array.IndexOf(nameList, selectedName);
+            //int selectedIndex = List<string>.IndexOf(nameList, selectedName);
+            int selectedIndex = nameList.IndexOf(selectedName);
             TBIp.Text = ipList[selectedIndex];
         }
+        */
     }
 }

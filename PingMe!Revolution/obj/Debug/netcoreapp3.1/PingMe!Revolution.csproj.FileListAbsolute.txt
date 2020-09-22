@@ -53,3 +53,30 @@ D:\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revo
 D:\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution.pdb
 D:\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution.genruntimeconfig.cache
 D:\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution.csprojAssemblyReference.cache
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\bin\Debug\netcoreapp3.1\PingMe!Revolution.exe
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\bin\Debug\netcoreapp3.1\PingMe!Revolution.deps.json
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\bin\Debug\netcoreapp3.1\PingMe!Revolution.runtimeconfig.json
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\bin\Debug\netcoreapp3.1\PingMe!Revolution.runtimeconfig.dev.json
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\bin\Debug\netcoreapp3.1\PingMe!Revolution.dll
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\bin\Debug\netcoreapp3.1\PingMe!Revolution.pdb
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\bin\Debug\netcoreapp3.1\LiveCharts.dll
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\bin\Debug\netcoreapp3.1\LiveCharts.Wpf.dll
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution.csprojAssemblyReference.cache
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\Home.g.cs
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\ModifyWindow.g.cs
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\App.g.cs
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution_MarkupCompile.cache
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution_MarkupCompile.lref
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\App.baml
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\Home.baml
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\ModifyWindow.baml
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution.g.resources
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution.AssemblyInfoInputs.cache
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution.AssemblyInfo.cs
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution.csproj.CoreCompileInputs.cache
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution.csproj.CopyComplete
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution.dll
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution.pdb
+D:\Ce PC\Documents\GitHub\PingMeRevolution\PingMe!Revolution\obj\Debug\netcoreapp3.1\PingMe!Revolution.genruntimeconfig.cache

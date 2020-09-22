@@ -79,11 +79,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\PingMeRevolution\\PingMe!Revolution\\PingMe!Revolution.csproj",
+      "projectUniqueName": "D:\\Ce PC\\Documents\\GitHub\\PingMeRevolution\\PingMe!Revolution\\PingMe!Revolution.csproj",
       "projectName": "PingMe!Revolution",
-      "projectPath": "D:\\GitHub\\PingMeRevolution\\PingMe!Revolution\\PingMe!Revolution.csproj",
+      "projectPath": "D:\\Ce PC\\Documents\\GitHub\\PingMeRevolution\\PingMe!Revolution\\PingMe!Revolution.csproj",
       "packagesPath": "C:\\Users\\romai\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\PingMeRevolution\\PingMe!Revolution\\obj\\",
+      "outputPath": "D:\\Ce PC\\Documents\\GitHub\\PingMeRevolution\\PingMe!Revolution\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\romai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -146,7 +146,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Le package 'LiveCharts 0.9.7' a été restauré en utilisant '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' au lieu du framework cible du projet '.NETCoreApp,Version=v3.1'. Ce package n'est peut-être pas totalement compatible avec votre projet.",
+      "message": "Package 'LiveCharts 0.9.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "LiveCharts",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -156,7 +156,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Le package 'LiveCharts.Wpf 0.9.7' a été restauré en utilisant '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' au lieu du framework cible du projet '.NETCoreApp,Version=v3.1'. Ce package n'est peut-être pas totalement compatible avec votre projet.",
+      "message": "Package 'LiveCharts.Wpf 0.9.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "LiveCharts.Wpf",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
