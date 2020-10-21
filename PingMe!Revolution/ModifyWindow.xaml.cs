@@ -48,7 +48,12 @@ namespace PingMe_Revolution
             }
             else
             {
-                homeRef.ModifyData(TBName.Text, TBIp.Text, LVNames.SelectedIndex);
+                if (selectedIndex != -1)
+                {
+                    nameList[selectedIndex] = TBName.Text;
+                    ipList[selectedIndex] = TBIp.Text;
+                }
+                homeRef.ModifyData(nameList, ipList);
                 this.Close();   
             }
         }
@@ -61,11 +66,7 @@ namespace PingMe_Revolution
             {
                 nameList[selectedIndex] = TBName.Text;
                 ipList[selectedIndex] = TBIp.Text;
-                LVNames.Items.Clear();
-                foreach (string name in nameList)
-                {
-                    LVNames.Items.Add(name);
-                }
+                LVNames.Items[selectedIndex] = TBName.Text;
             }
             
             selectedIndex = LVNames.SelectedIndex;
@@ -77,23 +78,5 @@ namespace PingMe_Revolution
         {
             this.Close();
         }
-
-        /*private void LVNames_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            DependencyObject dep = (DependencyObject)e.OriginalSource;
-            while ((dep != null) && !(dep is ListViewItem))
-            {
-                dep = VisualTreeHelper.GetParent(dep);
-            }
-
-            if (dep == null)
-                return;
-            String selectedName = (String)LVNames.ItemContainerGenerator.ItemFromContainer(dep);
-            TBName.Text = selectedName;
-            //int selectedIndex = List<string>.IndexOf(nameList, selectedName);
-            int selectedIndex = nameList.IndexOf(selectedName);
-            TBIp.Text = ipList[selectedIndex];
-        }
-        */
     }
 }

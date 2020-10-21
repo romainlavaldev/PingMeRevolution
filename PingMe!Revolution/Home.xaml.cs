@@ -239,12 +239,14 @@ namespace PingMe_Revolution
             modifyWindow.Show();
         }
 
-        public void ModifyData(string name, string ip, int index)
+        public void ModifyData(List<String> name, List<String> ip)
         {
-            String[] datas = File.ReadAllLines(dataPath);
+            String[] datas = new string[name.Count];
 
-            datas[index] = name + "," + ip;
-
+            for (int i = 0; i < name.Count; i++)
+            {
+                datas[i] = name[i] + "," + ip[i];
+            }
             File.WriteAllLines(dataPath, datas);
 
             Refresh();
