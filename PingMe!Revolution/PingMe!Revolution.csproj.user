@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AddTab.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Home.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -15,6 +18,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="AddTab.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Home.xaml">
       <SubType>Designer</SubType>
     </Page>

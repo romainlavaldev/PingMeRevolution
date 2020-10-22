@@ -22,8 +22,8 @@ namespace PingMe_Revolution
     /// </summary>
     public partial class MainWindow : Window
     {
-        
-
+        private Home home;
+        private AddTab addTab;
         public MainWindow()
         {
             InitializeComponent();
@@ -31,10 +31,11 @@ namespace PingMe_Revolution
             {
                 InitFiles();
             }
+
+            home = new Home();
+            addTab = new AddTab();
             BtnHome_Click(BtnHome, null);
-            Home home = new Home();
-            ContentDockPanel.Children.Add(home);
-            BtnHome_Click(BtnHome, null);
+            
         }
 
 
@@ -79,6 +80,8 @@ namespace PingMe_Revolution
             HideRectAndBack();
             RectBtnAddresses.Visibility = Visibility.Visible;
             BtnAddresses.Background = (Brush)new BrushConverter().ConvertFrom("#41454b");
+            ContentDockPanel.Children.Clear();
+            ContentDockPanel.Children.Add(addTab);
         }
 
         private void BtnHome_Click(object sender, RoutedEventArgs e)
@@ -86,6 +89,8 @@ namespace PingMe_Revolution
             HideRectAndBack();
             RectBtnHome.Visibility = Visibility.Visible;
             BtnHome.Background = (Brush)new BrushConverter().ConvertFrom("#41454b");
+            ContentDockPanel.Children.Clear();
+            ContentDockPanel.Children.Add(home);
         }
 
         private void HideRectAndBack()
