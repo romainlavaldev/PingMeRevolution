@@ -2,4 +2,4 @@
 
 Une super application pour les G@M3Rz
 
-utema.tech
+http://utema.tech/pingme.html
